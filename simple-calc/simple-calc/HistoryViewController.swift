@@ -9,10 +9,18 @@
 import UIKit
 
 class HistoryViewController: UIViewController {
+    
+    var inputs = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        for input in inputs {
+            let label = UILabel(frame: CGRect(x: 0, y: 75 + inputs.index(of: input)! * 30, width: 200, height: 21))
+            label.textAlignment = .center
+            label.text = input
+            self.view.addSubview(label)
+        }
         // Do any additional setup after loading the view.
     }
 
