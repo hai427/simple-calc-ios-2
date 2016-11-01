@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-//    var firstInput = Double()
-//    var secondInput = Double()
     var input = [Double]()
     var operationInput = String()
     var operationEntered = false
